@@ -26,11 +26,9 @@
 
 $u = "http://nexusmaster.alm.europe.cloudcenter.corp/repository/maven-public/"
 
-# 1) ¿Responde el repo?
-curl -I $u
+curl.exe -I $u
 
-# 2) ¿Permite bajar un POM conocido? (debe dar 200)
-curl -I ($u + "org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.pom")
+curl.exe -I ($u + "org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.pom")
 
-# 3) ¿Permite bajar el JAR? (debe dar 200)
-curl -I ($u + "org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.jar")
+curl.exe -I ($u + "io/gatling/highcharts/gatling-charts-highcharts/3.10.5/gatling-charts-highcharts-3.10.5.pom")
+
