@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
@@ -6,7 +7,7 @@
     <mirror>
       <id>corp-mirror</id>
       <name>Corporate Maven Mirror</name>
-      <url>https://TU_NEXUS_O_ARTIFACTORY/repository/maven-public/</url>
+      <url>http://nexusmaster.alm.europe.cloudcenter.corp/repository/maven-public/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
