@@ -21,3 +21,16 @@
   </servers>
 
 </settings>
+
+
+
+$u = "http://nexusmaster.alm.europe.cloudcenter.corp/repository/maven-public/"
+
+# 1) ¿Responde el repo?
+curl -I $u
+
+# 2) ¿Permite bajar un POM conocido? (debe dar 200)
+curl -I ($u + "org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.pom")
+
+# 3) ¿Permite bajar el JAR? (debe dar 200)
+curl -I ($u + "org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.jar")
